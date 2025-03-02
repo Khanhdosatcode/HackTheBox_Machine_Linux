@@ -1,4 +1,5 @@
 ![alt text](image.png)
+
 Quét các cổng và dịch vụ trên máy chủ đích có địa chỉ 10.10.11.53
 ```bash
 nmap -sC -sV 10.10.11.53 -oA Cat
