@@ -1,5 +1,7 @@
 ![alt text](image.png)
 
+![alt text](image-54.png)
+# Enumeration
 Quét các cổng và dịch vụ trên máy chủ đích có địa chỉ 10.10.11.53
 ```bash
 nmap -sC -sV 10.10.11.53 -oA Cat
@@ -119,7 +121,7 @@ Nếu ta có được session của axel thì có thể vào được trang /adm
 
 Trong file view_cat.php
 ![alt text](image-13.png)
-
+# Exploit
 Cách khai thác : Ta có thể chèn lợi dụng lỗ hổng XSS Store để lấy được cookie của admin .Sau khi ta lấy được cookie admin thì có thể truy cập vào trang /admin.php
 Payload XSS ta có thể chèn vào username đăng ký và payload sẽ thực thi khi admin click vào xem file ảnh ta tải lên 
 Payload sử dụng khai thác XSS 
@@ -181,7 +183,7 @@ Ta khai thác thành công username và password trong CSDL của website.
 
 Ta tiếp tục sử dụng CrackStation để tiếp tục crack mã băm còn lại và crack được password của rosa : soyunaprincesarosa 
 ![alt text](image-27.png)
-
+# FootHold
 Ta sử dụng tk : rosa và password : soyunaprincesarosa để kết nối từ xa đến máy chủ đích
 ```bash
 ssh rosa@cat.htb
@@ -214,7 +216,7 @@ Ta dùng sudo để chuyển người dùng k được nên ta sẽ kết nối 
 ![alt text](image-34.png)
 Tìm thấy file user.txt
 ![alt text](image-35.png)
-
+# Privilege Escalation
 Kiểm tra quyền axel trên hệ thống  không mang lại thông tin giá trị
 ![alt text](image-36.png)
 
